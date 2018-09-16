@@ -21,7 +21,7 @@ public class FactorialTests {
 
     @Test // Make me pass first
     public void shouldReturnOneWhenNumberIsOne(){
-        assertThat(new Factorial().compute(1), is(1));
+        assertThat(factorial.compute(1), is(1));
     }
 
     @Test
