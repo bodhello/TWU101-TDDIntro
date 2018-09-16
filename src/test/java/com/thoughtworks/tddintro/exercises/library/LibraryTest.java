@@ -49,7 +49,12 @@ public class LibraryTest {
 
     @Test
     public void shouldPrintBothBookTitlesWhenThereAreTwoBooks() throws IOException {
+        books.add("A");
+        books.add("B");
 
+        library.listBooks();
+
+        verify(printStream).println("A\nB\n");
     }
 
     @Test
